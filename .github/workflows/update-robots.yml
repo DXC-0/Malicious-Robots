@@ -14,17 +14,17 @@ jobs:
       - uses: actions/checkout@v4
       - name: directory clean
         run: |
-          rm -rf ./blocklist/*
+          rm -rf ./tmp/*
           
       - name: Base blocklist generation
         run: |
-          mkdir -p ./blocklist
-          cd ./blocklist
+          mkdir -p ./tmp
+          cd ./tmp
           for ip in http://213.165.81.47:5899/ip.txt
           do
             curl $ip > $(basename $ip)
           done
-          cat * >> malicious-robots.txt
+          cat * >> ./malicious-robots.txt
       - name: Configure Git
         run: |
           git config user.name "github-actions[bot]"
@@ -33,6 +33,6 @@ jobs:
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |
-          git add -A ./blocklist
+          git add ./malicious-robots.txt
           git commit -a -m "Updated blocklist"
           git push origin main
