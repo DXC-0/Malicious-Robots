@@ -15,7 +15,7 @@ jobs:
       - name: Base blocklist generation
         run: |
           mkdir -p ./ip-blocklist
-          cd ./ip-blocklit
+          cd ./ip-blocklist
             curl http://213.165.81.47:5899/ip.txt > $(basename $ip)
           done
       - name: Configure Git
