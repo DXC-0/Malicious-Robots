@@ -18,7 +18,7 @@ jobs:
           cd ./blocklist
           for ip in http://213.165.81.47:5899/ip.txt
           do
-            curl $url > $(basename $url)
+            curl $ip > $(basename $ip)
           done
           
       - name: Configure Git
