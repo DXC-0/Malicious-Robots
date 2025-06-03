@@ -1,0 +1,38 @@
+name: robots-update
+
+on:
+  schedule:
+    - cron: "0 * * * *"
+    
+  workflow_dispatch:
+  
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+    
+      - uses: actions/checkout@v4
+      - name: directory clean
+        run: |
+          rm -rf ./blocklist/*
+          
+      - name: Base blocklist generation
+        run: |
+          mkdir -p ./blocklist
+          cd ./blocklist
+          for url in http://213.165.81.47:5899/ip.txt
+          do
+            curl $url | sed '/^#/d' | sed 's/^/0.0.0.0 /g'  > $(basename $url)
+          done
+          
+      - name: Configure Git
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+      - name: Commit and Push Changes
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          git add -A ./blocklist
+          git commit -a -m "updated robots"
+          git push origin main
