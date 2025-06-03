@@ -12,17 +12,13 @@ jobs:
     steps:
     
       - uses: actions/checkout@v4
-      - name: directory clean
-        run: |
-          rm -rf ./blocklist/*
-          
       - name: Base blocklist generation
         run: |
           mkdir -p ./blocklist
           cd ./blocklist
-          for url in http://213.165.81.47:5899/ip.txt
+          for ip in http://213.165.81.47:5899/ip.txt
           do
-            curl $url | sed '/^#/d' | sed 's/^/0.0.0.0 /g'  > $(basename $url)
+            curl $url > $(basename $url)
           done
           
       - name: Configure Git
