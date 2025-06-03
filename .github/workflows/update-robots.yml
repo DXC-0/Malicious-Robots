@@ -14,8 +14,8 @@ jobs:
       - uses: actions/checkout@v4
       - name: Base blocklist generation
         run: |
-          mkdir -p ./blocklist
-          cd ./blocklist
+          mkdir -p ./ip-blocklist
+          cd ./ip-blocklit
           for ip in http://213.165.81.47:5899/ip.txt
           do
             curl $ip > $(basename $ip)
@@ -29,6 +29,6 @@ jobs:
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |
-          git add -A ./blocklist
+          git add -A ./ip-blocklist
           git commit -a -m "updated robots"
           git push origin main
