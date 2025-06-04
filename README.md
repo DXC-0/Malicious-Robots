@@ -11,4 +11,6 @@ My Honeypots are exclusively under linux and located in Europe.
 
 For more information visit [dxc-0.fr](https://dxc-0.github.io/honeypot/)
 
+<br/>
+
 [![Capture-d-cran-du-2025-06-04-12-47-46.png](https://i.postimg.cc/DZVYrGZr/Capture-d-cran-du-2025-06-04-12-47-46.png)](https://postimg.cc/HJ22HVbn)
