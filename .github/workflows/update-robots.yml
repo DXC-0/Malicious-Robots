@@ -33,13 +33,13 @@ jobs:
           touch malicious-robots.txt
           sort unique-ips.txt | uniq > temp-ips.txt
           sort -u malicious-robots.txt temp-ips.txt -o malicious-robots.txt
-          rm unique-ips.txt temp-ips.txt
 
       - name: Génération du CSV
         run: |
-          rm -f malicious-robots.csv
-          echo '"IP uniques"' > malicious-robots.csv
-          cat malicious-robots.txt >> malicious-robots.csv
+          rm -f malicious-robots-daily.csv
+          echo '"IP uniques"' > malicious-robots-daily.csv
+          cat unique-ips.txt >> malicious-robots-daily.csv
+          rm unique-ips.txt temp-ips.txt
   
       - name : configure git
         run: |
