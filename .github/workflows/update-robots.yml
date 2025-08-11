@@ -38,7 +38,7 @@ jobs:
         run: |
           rm -f malicious-robots-daily.csv
           echo '"IP uniques"' > malicious-robots-daily.csv
-          cat unique-ips.txt >> malicious-robots-daily.csv
+          cat temp-ips.txt >> malicious-robots-daily.csv
           rm unique-ips.txt temp-ips.txt
   
       - name : configure git
