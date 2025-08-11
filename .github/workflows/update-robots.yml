@@ -37,6 +37,7 @@ jobs:
 
       - name: Génération du CSV
         run: |
+          rm -f malicious-robots.csv
           echo "IP uniques" > malicious-robots.csv
           cat malicious-robots.txt >> malicious-robots.csv
   
@@ -49,6 +50,6 @@ jobs:
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |
-          git add malicious-robots.txt
+          git add malicious-robots.txt malicious-robots.csv
           git commit -m "Update malicious-robots.txt" || echo "No changes to commit"
           git push origin main
