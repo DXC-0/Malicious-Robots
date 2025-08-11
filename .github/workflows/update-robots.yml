@@ -38,7 +38,7 @@ jobs:
       - name: Génération du CSV
         run: |
           rm -f malicious-robots.csv
-          echo "IP uniques" > malicious-robots.csv
+          echo '"IP uniques"' > malicious-robots.csv
           cat malicious-robots.txt >> malicious-robots.csv
   
       - name : configure git
