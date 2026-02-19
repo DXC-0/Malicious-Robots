@@ -14,7 +14,7 @@ Updates are daily with everything that was detected the day before. IPs are also
 
 My Honeypots are exclusively under Linux and located in Europe. 
 
-For more information visit [dxc-0.fr](https://dxc-0.github.io/honeypot/)
+For more information visit [dxc-0.fr](https://dxc-0.fr/)
 
 <br/>
 
